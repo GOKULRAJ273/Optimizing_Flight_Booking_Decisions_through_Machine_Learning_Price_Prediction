@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>predict</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+    h1 {text-align: center;}
+    body {
+            background-image: url("https://media.istockphoto.com/id/155380716/photo/commercial-jet-flying-over-clouds.jpg?s=612x612&w=0&k=20&c=idhnJ7ZdrLA1Dv5GO2R28A8WCx1SXCFVLu5_2cfdvXw=");
+            background-size: cover;
+        }
+        h3.big {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+ <div class="container">
+        <div class="col-md-12 bg-light text-right">
+            <a href="/home" class="btn btn-info btn-lg">Home</a>
+            <a href="/predict" class="btn btn-primary btn-lg">Predict</a>
+    </div>
+
+    <br>
+<h1><strong>Flight Price Prediction</strong></h1>
+ <form method="post" action="app.py">
+		<label for="Airline">Airline:</label>
+		<select id="Airline" name="Airline">
+			<option value="0">Air Asia</option>
+			<option value="1">Air India</option>
+			<option value="2">GoAir</option>
+			<option value="3">IndiGo</option>
+			<option value="4">Jet Airways</option>
+			<option value="5">Jet Airways Business</option>
+			<option value="6">Multiple Carriers</option>
+			<option value="7">Multiple Carriers Premium economy</option>
+			<option value="8">Spice Jet</option>
+			<option value="9">Trujet</option>
+			<option value="10">Vistara</option>
+			<option value="10">Vistara Premium economy</option>
+		</select>
+	<br><br>
+    <label for="source">Source:</label>
+		<select id="source" name="source">
+			<option value="0">Banglore</option>
+			<option value="1">Chennai</option>
+			<option value="2">Delhi</option>
+			<option value="3">Kolkata</option>
+			<option value="4">Mumbai</option>
+		</select>
+	<br><br>
+	 <label for="destination">Destination:</label>
+		<select id="destination" name="destination">
+			<option value="0">Banglore</option>
+			<option value="1">Cochin</option>
+			<option value="2">Delhi</option>
+			<option value="3">Hyderabad</option>
+			<option value="4">Kolkata</option>
+			<option value="5">New Delhi</option>
+		</select>
+	 <br><br>
+	 <label for="depdate">depdate:</label>
+		<input type="number" id="depdate" name="depdate" placeholder="depdate">
+		<br><br>
+	  <label for="depmonth">depmonth:</label>
+		<input type="number" id="depmonth" name="depmonth" placeholder="depmonth">
+		<br><br>
+	  <label for="depyear">depyear:</label>
+		<input type="number" id="depyear" name="depyear" placeholder="depyear">
+		<br><br>
+		<label for="deptimehour">deptimehour:</label>
+		<input type="number" id="deptimehour" name="deptimehour" placeholder="deptimehour">
+	 <br><br>
+	    <label for="deptimemins">deptimemins:</label>
+		<input type="number" id="deptimemins" name="deptimemins" placeholder="deptimins">
+		<br><br>
+		<label for="artimehour">artimehour:</label>
+		<input type="number" id="artimehour" name="artimehour" placeholder="artimehour">
+	 <br><br>
+	    <label for="artimemins">artimemins:</label>
+		<input type="number" id="artimemins" name="artimemins" placeholder="artimehour">
+	 <br><br>
+		<input type="submit" value="Submit">
+ </form>
+	 </div>
+
+</body>
+</html>
